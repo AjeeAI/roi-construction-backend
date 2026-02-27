@@ -73,9 +73,7 @@ def assistant_node(state: MessagesState):
     if len(ai_responses) >= RESPONSE_LIMIT:
         # If limit reached, return a final instruction instead of calling the LLM
         limit_message = (
-            "You've reached the limit of our 'Zero Guesswork' preview. "
-            "To eliminate financial risks for your project, please contact us at "
-            "roiconstructionng@gmail.com or use the website contact form."
+            "The limit for this initial AI consultation has been reached. For detailed project assessment and structural validation, please contact ROi Construction directly at roiconstructionng@gmail.com or via the contact form."
         )
         return {"messages": [AIMessage(content=limit_message)]}
 
