@@ -1,0 +1,27 @@
+# Python caches and compiled files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment Variables (CRITICAL FOR SECURITY)
+.env
+
+# Git
+.git
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+
+# Testing & Build artifacts
+.pytest_cache
+.coverage
+*.egg-info/
