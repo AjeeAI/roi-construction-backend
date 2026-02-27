@@ -101,6 +101,10 @@ class ChatRequest(BaseModel):
 def read_root():
     return {"message": "Welcome to the ROi Construction & Engineering AI Consultant API!"}
 
+@app.get('/health')
+def health_check():
+    return {"status": "ok"}
+
 @app.post("/chat")
 async def chat(request: ChatRequest):
     config = {"configurable": {"thread_id": request.thread_id}}
